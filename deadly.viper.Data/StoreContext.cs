@@ -1,4 +1,5 @@
 ﻿using deadly.viper.Domain.Catalog;
+using deadly.viper.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace deadly.viper.Data
@@ -9,6 +10,8 @@ namespace deadly.viper.Data
 			: base(options)
 		{ }
 		public DbSet<Item> Items { get; set;}
+
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
