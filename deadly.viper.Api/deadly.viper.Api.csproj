@@ -5,7 +5,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
-    <RootNamespace>deadly_viper.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\deadly-viper.Domain\deadly-viper.Domain.csproj" />
+    <ProjectReference Include="..\deadly.viper.Domain\deadly.viper.Domain.csproj" />
   </ItemGroup>
 
 </Project>
