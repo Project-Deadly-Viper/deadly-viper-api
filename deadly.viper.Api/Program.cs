@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(options =>
 	options.UseSqlite("Data Source=../Registrar.Sqlite",
-	b => b.MigrationsAssembly("Deadly.Viper.Api"))
+	b => b.MigrationsAssembly("deadly.viper.Api"))
 );
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
