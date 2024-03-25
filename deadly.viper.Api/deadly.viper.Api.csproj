@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\deadly.viper.Domain\deadly.viper.Domain.csproj" />
+    <ProjectReference Include="..\deadly.viper.Data\deadly.viper.Data.csproj" />
   </ItemGroup>
 
 </Project>
