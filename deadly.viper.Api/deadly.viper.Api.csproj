@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\deadly.viper.Domain\deadly.viper.Domain.csproj" />
+    <ProjectReference Include="..\deadly.viper.Data\deadly.viper.Data.csproj" />
   </ItemGroup>
 
 </Project>
