@@ -35,7 +35,7 @@ namespace deadly.viper.Api.Controllers
         }
 
         [HttpPost("{id:int}/ratings")]
-        public IAction Result PostRating(int id, [FromBody Rating rating])
+        public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
             var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
             item.Id = id;
