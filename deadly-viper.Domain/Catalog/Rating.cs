@@ -1,25 +1,28 @@
-namespace deadly.viper.Domain.Catalog;
+using System;
 
-public class Rating
+namespace deadly.viper.Domain.Catalog
 {
-    public int Stars { get; set; }
-    public string UserName { get; set; }
-    public string Review { get; set; }
-}
-
-public Rating{int stars, string userName, string review}
-{
-    if(stars < 1 || stars > 5)
+    public class Rating
     {
-        throw new ArgumentException{"Star rating must be an integer of: 1, 2, 3, 4, 5."}
-    }
+        public int Stars { get; set; }
+        public string UserName { get; set; }
+        public string Review { get; set; }
 
-    if(string.IsNullOrEmpty(userName))
-    {
-        throw new ArgumentException("UserName cannot be null.");
-    }
+        public Rating(int stars, string userName, string review)
+        {
+            if(stars < 1 || stars > 5)
+            {
+                throw new ArgumentException("Star rating must be an integer of: 1, 2, 3, 4, 5.");
+            }
 
-    this.Stars = stars;
-    this.UserName = userName;
-    this.Review = review;
+            if(string.IsNullOrEmpty(userName))
+            {
+                throw new ArgumentException("UserName cannot be null.");
+            }
+
+            this.Stars = stars;
+            this.UserName = userName;
+            this.Review = review;
+        }
+    }
 }
