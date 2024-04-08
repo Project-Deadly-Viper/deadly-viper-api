@@ -1,0 +1,25 @@
+{
+  "name": "deadly-viper-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-Deadly-Viper/deadly-viper-api.git"
+  },
+  "author": "MZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Project-Deadly-Viper/deadly-viper-api/issues"
+  },
+  "homepage": "https://github.com/Project-Deadly-Viper/deadly-viper-api#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

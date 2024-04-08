@@ -8,7 +8,7 @@ public class RatingTests
     [TestMethod]
     public void Can_Create_New_Rating()
     {
-        //Arange
+        //Arrange
         var rating = new Rating(1, "Mike", "Great fit!");
 
         //Act (empty)
